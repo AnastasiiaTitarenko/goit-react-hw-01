@@ -6,7 +6,7 @@ import userData from './components/Profile/userData.json'
 
 import FriendList from './components/FriendList/FriendList'
 import friendsData from './components/FriendList/friendsData.json'
-  
+
 const App = () => {
   return (
   <>
@@ -19,7 +19,7 @@ const App = () => {
       />
       
       <FriendList 
-        friends={friends} />
+        friends={friendsData.friends} />
       
       <TransactionHistory 
       items = {transactions}/>

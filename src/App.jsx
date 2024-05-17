@@ -1,4 +1,4 @@
-import { useState } from 'react'
+// import { useState } from 'react' 
 
 import './App.css'
 import Profile from './components/Profile/Profile'
@@ -7,6 +7,8 @@ import userData from './components/Profile/userData.json'
 import FriendList from './components/FriendList/FriendList'
 import friendsData from './components/FriendList/friendsData.json'
 
+import TransactionHistory from './components/TransactionHistory/TransactionHistory'
+import transactionsData from './components/TransactionHistory/transactionsData.json'
 
 const App = () => {
   return (
@@ -23,8 +25,8 @@ const App = () => {
         friends={friendsData}
       />
       
-      {/* <TransactionHistory 
-      items = {transactions}/> */}
+      <TransactionHistory 
+      items = {transactionsData}/>
   </>
   );
 };

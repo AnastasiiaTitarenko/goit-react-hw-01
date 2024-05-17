@@ -1,12 +1,14 @@
-import css from './Friendlist.module.css'
+import css from './FriendList.module.css'
 
 const FriendListItem = ({ friend }) => {
-const { id, avatar, name, isOnline } = friend;
+  const { avatar, name, isOnline } = friend;
+  const statusText = isOnline ? 'Online' : 'Offline';
+  const statusClass = isOnline ? css.online : css.offline;
 return (
-    <div>
+    <div className={css["friend-info"]}>
   <img src={avatar} alt="Avatar" width="48" />
   <p className={css["friend-name"]}> {name}</p>
-  <p className={css["friend-status"]}> {isOnline}</p>
+  <p className={`${css["friend-status"]} ${statusClass}`}> {statusText}</p>
 </div>
 )
 }

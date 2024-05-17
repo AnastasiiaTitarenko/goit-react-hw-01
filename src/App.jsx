@@ -4,9 +4,9 @@ import './App.css'
 import Profile from './components/Profile/Profile'
 import userData from './components/Profile/userData.json'
 
-
-import friendsData from './components/FriendList/friendsData.json'
 import FriendList from './components/FriendList/FriendList'
+import friendsData from './components/FriendList/friendsData.json'
+
 
 const App = () => {
   return (

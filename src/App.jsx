@@ -19,10 +19,10 @@ const App = () => {
       />
       
       <FriendList 
-        friends={friendsData.friends} />
+        friends={friendsData} />
       
-      <TransactionHistory 
-      items = {transactions}/>
+      {/* <TransactionHistory 
+      items = {transactions}/> */}
   </>
   );
 };

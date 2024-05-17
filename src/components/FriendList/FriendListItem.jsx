@@ -1,6 +1,6 @@
 import css from './Friendlist.module.css'
 
-const FriendListItem ({ friend }) => {
+const FriendListItem = ({ friend }) => {
 const { id, avatar, name, isOnline } = friend;
   return (
     <div>
